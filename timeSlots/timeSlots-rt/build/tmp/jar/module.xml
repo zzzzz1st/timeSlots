@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module name="timeSlots-rt" bajaVersion="0" vendor="calosi" vendorVersion="1.0" description="calculates the consumed energy based on timeslots" preferredSymbol="ts" nre="true" autoload="true" installable="true" buildMillis="1627467755483" buildHost="L390-R90T25S5" moduleName="timeSlots" runtimeProfile="rt">
+ <dependencies>
+  <dependency name="baja" vendor="Tridium" vendorVersion="4.9"/>
+  <dependency name="schedule-rt" vendor="Tridium" vendorVersion="4.9"/>
+ </dependencies>
+ <dirs/>
+ <types>
+  <type class="com.calosi.timeSlots.BMonthlyTimeSlots" name="MonthlyTimeSlots"/>
+  <type class="com.calosi.timeSlots.BLastYearTimeSlots" name="LastYearTimeSlots"/>
+  <type class="com.calosi.timeSlots.worker.BTimeSlotsWorker" name="TimeSlotsWorker"/>
+ </types>
+ <permissions>
+  <niagara-permission-groups type="all"/>
+  <niagara-permission-groups type="workbench"/>
+  <niagara-permission-groups type="station"/>
+ </permissions>
+</module>

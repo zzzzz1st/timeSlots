@@ -1,0 +1,10 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--com.calosi.timeSlots-->
+  <type class="com.calosi.timeSlots.BMonthlyTimeSlots" name="MonthlyTimeSlots"/>
+  <type class="com.calosi.timeSlots.BLastYearTimeSlots" name="LastYearTimeSlots"/>
+  <!--com.calosi.timeSlots.worker-->
+  <type class="com.calosi.timeSlots.worker.BTimeSlotsWorker" name="TimeSlotsWorker"/>
+</types>

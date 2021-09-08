@@ -1,0 +1,28 @@
+/* Module Build File */
+
+description     = "calculates the consumed energy based on timeslots"
+ext {
+}
+niagaraModule {
+  moduleName = "timeSlots"
+  preferredSymbol = "ts"
+  runtimeProfile = "rt"
+}
+
+dependencies {
+  compile "Tridium:nre:4.9"
+  compile "Tridium:baja:4.9"
+  compile "Tridium:schedule-rt:4.9"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}
+jar {
+  from ("src")
+          {
+            include "rc/*"
+          }
+
+}
